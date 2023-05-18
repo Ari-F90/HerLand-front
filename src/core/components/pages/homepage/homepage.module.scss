@@ -1,0 +1,51 @@
+.homepage {
+  height: 70vh;
+  &__first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    margin-top: 2rem;
+    width: 20rem;
+  }
+  &__title {
+    font-size: 3rem;
+    color: rgb(80, 11, 168);
+    font-family: "Inter", serif;
+    justify-self: flex-start;
+    font-weight: 900px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    line-height: 4rem;
+  }
+  &__text {
+    color: rgb(80, 11, 168);
+    font-family: "Inter", serif;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    line-height: 2rem;
+  }
+  &__second {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    font-size: 1.5rem;
+    font-weight: 100px;
+  }
+  &__button {
+    align-self: center;
+    margin-top: 3rem;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", serif;
+    background-color: rgb(255, 140, 230);
+    border: none;
+    border-radius: 0.7rem;
+    width: 10rem;
+    height: 2.8rem;
+    cursor: pointer;
+    padding: 0.3rem;
+  }
+}
