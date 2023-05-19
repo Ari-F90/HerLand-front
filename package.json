@@ -36,7 +36,7 @@
       "<rootDir>/src/reportWebVitals.ts",
       "<rootDir>/src/index.ts",
       "<rootDir>/src/services/firebase/firebase.config.ts",
-      "<rootDir>/src/core/store/store.ts"
+      "<rootDir>/src/store/store.ts"
     ]
   },
   "eslintConfig": {
