@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import App from "./core/app/app";
 import "./index.scss";
 import { Provider } from "react-redux";
-import { store } from "./core/store/store";
+import { store } from "./store/store";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const container = document.querySelector(".container")!;
