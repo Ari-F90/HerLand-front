@@ -1,13 +1,10 @@
 /* eslint-disable testing-library/no-render-in-setup */
 /* eslint-disable testing-library/no-unnecessary-act */
 import { configureStore } from "@reduxjs/toolkit";
-import { fireEvent } from "@testing-library/react";
 
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
-import { store } from "../../core/store/store";
-import { Figure } from "../models/figure";
-import * as ac from "../reducer/figures.actions.creator";
+
 import { figureReducer } from "../reducer/figures.reducer";
 import { FigureApiRepo } from "../repository/figure.repo";
 import { useFigures } from "./use.figures";
@@ -15,13 +12,6 @@ import { Provider } from "react-redux";
 import { MemoryRouter } from "react-router-dom";
 
 describe("Given the useFigures hook", () => {
-  const mockFigure = {
-    id: "1",
-    name: "Figure1",
-    img: "test1",
-  } as unknown as Figure;
-  let initialState = [{ id: "1", img: "test1", name: "Figure1" } as Figure];
-
   let elements: HTMLElement[];
 
   const mockStore = configureStore({
