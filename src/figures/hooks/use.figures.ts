@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState, AppDispatch } from "../../core/store/store";
+import { RootState, AppDispatch } from "../../store/store";
 import { FigureApiRepo } from "../repository/figure.repo";
 import * as ac from "../reducer/figures.actions.creator";
 import { Figure } from "../models/figure";
