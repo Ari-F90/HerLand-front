@@ -8,13 +8,14 @@
   &__img {
     margin-top: 2rem;
     width: 20rem;
+    object-fit: cover;
   }
   &__title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: rgb(80, 11, 168);
     font-family: "Inter", serif;
     justify-self: flex-start;
-    font-weight: 900px;
+    font-weight: bold;
     margin-top: 2rem;
     margin-left: 3rem;
     margin-right: 3rem;
