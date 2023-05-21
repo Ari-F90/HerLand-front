@@ -6,7 +6,7 @@ import { Figure } from "../../../figures/models/figure";
 import { FigureApiRepo } from "../../../figures/repository/figure.repo";
 
 import { Card } from "../card/card";
-import styles from "./festivalList.module.scss";
+import styles from "./figureList.module.scss";
 
 export function FigureList() {
   const repo = useMemo(() => new FigureApiRepo(), []);
