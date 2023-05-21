@@ -1,6 +1,6 @@
 import styles from "./homepage.module.scss";
 
-export function Homepage() {
+export default function HomePage() {
   return (
     <>
       <section className={styles.homepage}>
