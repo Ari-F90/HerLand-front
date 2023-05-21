@@ -1,7 +1,7 @@
+import { AppRouter } from "../components/app.router/app.router";
 import { Footer } from "../components/footer/footer";
 import { Header } from "../components/header/header";
 import { Menu, menuOptions } from "../components/menu/menu";
-import { Homepage } from "../components/pages/homepage/homepage";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header>
         <Menu props={menuOptions}></Menu>
       </Header>
-      <Homepage></Homepage>
+      <AppRouter></AppRouter>
       <Footer></Footer>
     </div>
   );
