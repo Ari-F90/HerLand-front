@@ -6,9 +6,10 @@ import { Provider } from "react-redux";
 import { store } from "../../store/store";
 import { Header } from "../components/header/header";
 import { Footer } from "../components/footer/footer";
+import { AppRouter } from "../components/app.router/app.router";
 
 jest.mock("../components/header/header");
-
+jest.mock("../components/app.router/app.router");
 jest.mock("../components/footer/footer");
 
 describe("Given the app component", () => {
@@ -20,6 +21,7 @@ describe("Given the app component", () => {
         </Provider>
       );
       expect(Header).toHaveBeenCalled();
+      expect(AppRouter).toHaveBeenCalled();
       expect(Footer).toHaveBeenCalled();
     });
   });
