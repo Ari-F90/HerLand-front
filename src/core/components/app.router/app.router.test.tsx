@@ -20,7 +20,7 @@ describe("Given AppRouter", () => {
   describe("When rendering and the path is '/home'", () => {
     test("Then it should be titles in the screen", async () => {
       await waitFor(async () => renderAppRouter(0));
-      const element = await screen.findByRole("heading");
+      const element = await screen.findByRole("button");
       expect(element).toBeInTheDocument();
     });
   });
