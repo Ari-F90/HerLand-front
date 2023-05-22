@@ -1,6 +1,5 @@
 import { useEffect, useMemo } from "react";
 
-import { Link } from "react-router-dom";
 import { useFigures } from "../../../figures/hooks/use.figures";
 import { Figure } from "../../../figures/models/figure";
 import { FigureApiRepo } from "../../../figures/repository/figure.repo";
@@ -22,7 +21,7 @@ export function FigureList() {
     <>
       <div>
         <div className={styles.filterbuttons}>
-          <button className="" onClick={() => setPage(+0, "All")}>
+          <button className="" onClick={() => setPage(+0, "all")}>
             All figures
           </button>
           <button className="" onClick={() => setPage(+0, "Science")}>
