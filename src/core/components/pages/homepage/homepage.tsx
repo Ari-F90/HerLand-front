@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./homepage.module.scss";
 
 export default function HomePage() {
@@ -18,9 +19,13 @@ export default function HomePage() {
           <p className={styles.homepage__text}>
             Hidden women of the past they forgot to teach you about
           </p>
-          <button className={styles.homepage__button}>
-            DISCOVER THEM HERE
-          </button>
+        </div>
+        <div className={styles.buttoncontainer}>
+          <Link to={"/figures"}>
+            <button className={styles.homepage__button}>
+              DISCOVER THEM HERE
+            </button>
+          </Link>
         </div>
       </section>
     </>

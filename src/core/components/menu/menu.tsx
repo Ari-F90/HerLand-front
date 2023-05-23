@@ -8,7 +8,7 @@ export type MenuOptions = {
 
 export const menuOptions: MenuOptions[] = [
   { label: "Home", path: "/home" },
-  { label: "About us", path: "/about" },
+  { label: "About the project", path: "/about" },
   { label: "Herstory makers", path: "/figures" },
 ];
 
