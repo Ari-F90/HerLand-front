@@ -16,10 +16,10 @@
     font-family: "Inter", serif;
     justify-self: flex-start;
     font-weight: bold;
-    margin-top: 2rem;
     margin-left: 3rem;
     margin-right: 3rem;
     line-height: 4rem;
+    margin-top: 1rem;
   }
   &__text {
     color: rgb(80, 11, 168);
@@ -28,6 +28,7 @@
     margin-left: 3rem;
     margin-right: 3rem;
     line-height: 2rem;
+    font-weight: normal;
   }
   &__second {
     display: flex;
@@ -37,7 +38,6 @@
     font-weight: 100px;
   }
   &__button {
-    align-self: center;
     margin-top: 3rem;
     color: rgb(255, 255, 255);
     font-family: "Inter", serif;
@@ -48,5 +48,9 @@
     height: 2.8rem;
     cursor: pointer;
     padding: 0.3rem;
+  }
+  .buttoncontainer {
+    display: block;
+    text-align: center;
   }
 }
