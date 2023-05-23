@@ -9,7 +9,7 @@ export function Header({ children }: HeaderProps) {
         <Link to="/home">
           <img
             className={styles.header__logo}
-            src="../../../favicon.svg"
+            src="../../../../img/favicon.svg"
             alt="Favicon logo"
           ></img>
         </Link>
