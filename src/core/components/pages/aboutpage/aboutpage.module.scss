@@ -1,6 +1,6 @@
 .aboutpage {
   &__title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(80, 11, 168);
     text-align: center;
@@ -9,6 +9,10 @@
     margin-top: 2.5rem;
     margin-right: 10%;
     margin-left: 10%;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
   }
   &__text {
     display: flex;
@@ -26,11 +30,33 @@
   &__stronger {
     font-weight: bold;
   }
+  &__imgdiv {
+    align-self: center;
+    justify-self: center;
+    margin-top: 4rem;
+  }
   &__img {
     width: 12rem;
     height: 12rem;
-    align-self: center;
-    justify-self: center;
-    margin-top: 2rem;
+  }
+  @media screen and (min-width: 400px) {
+    &__title {
+      font-size: 2rem;
+    }
+    &__text {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin-top: 3rem;
+      width: 50%;
+    }
+    &__container {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+    }
+    &__img {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 }
