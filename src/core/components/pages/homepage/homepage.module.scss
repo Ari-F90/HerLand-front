@@ -53,4 +53,45 @@
     display: block;
     text-align: center;
   }
+
+  @media screen and (min-width: 400px) {
+    &__title {
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+    &__text {
+      font-size: 2rem;
+      line-height: 3.5rem;
+    }
+    .desktop {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 4rem;
+      justify-content: center;
+      align-content: center;
+      margin-left: 2rem;
+    }
+    .desktop2 {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 3rem;
+      justify-content: center;
+      align-content: center;
+    }
+    &__img {
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+    }
+    &__first {
+      width: 100%;
+      height: 100%;
+    }
+    &__button {
+      width: 16rem;
+      height: 4.3rem;
+      font-size: 1.2rem;
+    }
+  }
 }
