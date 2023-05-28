@@ -20,46 +20,95 @@ export function FigureList() {
   return (
     <>
       <div>
-        <div className={styles.filterbuttons}>
-          <button className="" onClick={() => setPage(+0, "all")}>
-            All figures
-          </button>
-          <button className="" onClick={() => setPage(+0, "Science")}>
-            Science
-          </button>
-          <button className="" onClick={() => setPage(+0, "History")}>
-            History
-          </button>
-          <button className="" onClick={() => setPage(+0, "Literature")}>
-            Literature
-          </button>
-          <button className="" onClick={() => setPage(+0, "Cinema")}>
-            Cinema
-          </button>
-          <button className="" onClick={() => setPage(+0, "Poetry")}>
-            Poetry
-          </button>
-          <button className="" onClick={() => setPage(+0, "Music")}>
-            Music
-          </button>
-          <button className="" onClick={() => setPage(+0, "Design")}>
-            Design
-          </button>
-          <button className="" onClick={() => setPage(+0, "Politics")}>
-            Politics
-          </button>
-          <button className="" onClick={() => setPage(+0, "Painting")}>
-            Painting
-          </button>
-          <button className="" onClick={() => setPage(+0, "Sport")}>
-            Sport
-          </button>
-          <button className="" onClick={() => setPage(+0, "Business")}>
-            Business
-          </button>
-          <button className="" onClick={() => setPage(+0, "Sculpture")}>
-            Sculpture
-          </button>
+        <div className={styles.filtercontainer}>
+          <div className={styles.containerbuttons}>
+            <button
+              className={styles.filterbutton}
+              onClick={() => setPage(+0, "all")}
+            >
+              All figures
+            </button>
+          </div>
+          <div className={styles.containerbuttons2}>
+            <div className={styles.filter1}>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Science")}
+              >
+                Science
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "History")}
+              >
+                History
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Literature")}
+              >
+                Literature
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Cinema")}
+              >
+                Cinema
+              </button>
+            </div>
+            <div className={styles.filter1}>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Poetry")}
+              >
+                Poetry
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Music")}
+              >
+                Music
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Design")}
+              >
+                Design
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Politics/Activism")}
+              >
+                Politics/Activism
+              </button>
+            </div>
+            <div className={styles.filter1}>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Painting")}
+              >
+                Painting
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Sport")}
+              >
+                Sport
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Business")}
+              >
+                Business
+              </button>
+              <button
+                className={styles.filterbuttons}
+                onClick={() => setPage(+0, "Sculpture")}
+              >
+                Sculpture
+              </button>
+            </div>
+          </div>
         </div>
         <ul className={styles.container}>
           {figures.map((item: Figure) => (
@@ -67,16 +116,22 @@ export function FigureList() {
           ))}
         </ul>
       </div>
-      <div className={styles.containerbuttons}>
+      <div className={styles.pagebuttons}>
         <div className={styles.prev}>
-          <button className={styles.prevbutton} onClick={() => setPage(-1)}>
-            <img src="../../../../img/prev.png" alt="prev-page"></img>
-          </button>
+          <img
+            className={styles.prevbutton}
+            onClick={() => setPage(-1)}
+            src="../../../img/prev.png"
+            alt="prev-page"
+          ></img>
         </div>
         <div className={styles.next}>
-          <button className={styles.nextbutton} onClick={() => setPage(+1)}>
-            <img src="../../../../img/next.png" alt="next-page"></img>
-          </button>
+          <img
+            className={styles.nextbutton}
+            onClick={() => setPage(+1)}
+            src="../../../img/next.png"
+            alt="next-page"
+          ></img>
         </div>
       </div>
     </>

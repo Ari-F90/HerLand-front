@@ -8,8 +8,8 @@ type CardProps = {
 
 export function Card({ figure }: CardProps) {
   return (
-    <div>
-      <li className={styles.card}>
+    <li className={styles.card}>
+      <div className={styles.card__container}>
         <div className={styles.card__element}>
           <Link to={`/details/${figure.id}`} relative="path">
             <img
@@ -19,12 +19,9 @@ export function Card({ figure }: CardProps) {
             ></img>
           </Link>
         </div>
-        <div className={styles.card__properties}>
-          <div className={styles.card__properties__name}>
-            <span>{figure.name}</span>
-          </div>
-        </div>
-      </li>
-    </div>
+
+        <div className={styles.card__properties}>{figure.name}</div>
+      </div>
+    </li>
   );
 }
