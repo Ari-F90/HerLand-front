@@ -60,7 +60,7 @@ describe("Given Figure List component", () => {
     test("Then it should return, apart from the pagination buttons, the buttons for each category", async () => {
       await act(async () => {
         const buttons = await screen.findAllByRole("button");
-        expect(buttons.length).toBe(15);
+        expect(buttons.length).toBe(13);
         await userEvent.click(buttons[0]);
         await userEvent.click(buttons[1]);
         await userEvent.click(buttons[2]);
