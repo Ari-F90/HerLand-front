@@ -20,26 +20,29 @@ export const Menu = ({ props }: MenuProps) => {
   return (
     <>
       <div className={styles.menucontainer}>
-        <div>
-          <nav className={styles.menuburger}>
-            <img
-              className={styles.burgerImg}
-              src="../../../img/menu-burger.png"
-              alt="Burger menu"
-            ></img>
-            <div className={styles.container__flex}>
-              <ul className={styles.menupaths}>
-                {props.map((item) => (
-                  <li key={item.label}>
-                    <Link to={item.path} className={styles.menu_item}>
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </nav>
-        </div>
+        <img
+          className={styles.logodesktop}
+          src="../../../img/logo.svg"
+          alt="Logo desktop"
+        ></img>
+        <nav className={styles.menuburger}>
+          <img
+            className={styles.burgerImg}
+            src="../../../img/menu-burger.png"
+            alt="Burger menu"
+          ></img>
+          <div className={styles.container__flex}>
+            <ul className={styles.menupaths}>
+              {props.map((item) => (
+                <li key={item.label}>
+                  <Link to={item.path} className={styles.menu_item}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
       </div>
     </>
   );
