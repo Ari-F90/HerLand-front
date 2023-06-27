@@ -1,17 +1,10 @@
-.logodesktop {
-  visibility: hidden;
-}
-
 .menupaths {
   display: none;
-  font-size: 1.1rem;
-  color: white;
 }
 
 .menuburger:hover {
   cursor: pointer;
   background-color: rgb(238, 216, 255);
-
   .menupaths {
     display: flex;
     flex-direction: column;
@@ -28,6 +21,7 @@
     text-align: center;
   }
 }
+
 a:link {
   text-decoration: none;
   font-family: "Inter", sans-serif;
@@ -61,9 +55,49 @@ a {
 .menu_item {
   border-bottom: 1px solid white;
   width: 80%;
-  @media screen and (min-width: 400px) {
-    .logodesktop {
-      display: flex-start;
+}
+.logodesktop {
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .logodesktop {
+    display: flex;
+    margin-left: 2rem;
+    width: 8rem;
+  }
+  .burgerImg {
+    display: none;
+  }
+
+  .menupaths {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    gap: 6rem;
+    position: absolute;
+    list-style: none;
+    text-decoration: none;
+  }
+  .menu_item {
+    border-bottom: none;
+  }
+
+  .menuburger:hover {
+    .menupaths {
+      display: none;
     }
+  }
+
+  .menucontainer {
+    justify-content: space-around;
+    align-content: space-between;
+  }
+  .container__flex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30rem;
+    margin-top: 0.6rem;
   }
 }

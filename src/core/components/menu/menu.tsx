@@ -20,11 +20,13 @@ export const Menu = ({ props }: MenuProps) => {
   return (
     <>
       <div className={styles.menucontainer}>
-        <img
-          className={styles.logodesktop}
-          src="../../../img/logo.svg"
-          alt="Logo desktop"
-        ></img>
+        <div>
+          <img
+            className={styles.logodesktop}
+            src="../../../img/logo.svg"
+            alt="Logo desktop"
+          ></img>
+        </div>
         <nav className={styles.menuburger}>
           <img
             className={styles.burgerImg}
