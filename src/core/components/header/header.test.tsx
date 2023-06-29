@@ -19,7 +19,7 @@ describe("Given the Header component", () => {
       );
 
       const elements = screen.getAllByRole("img");
-      expect(elements.length).toBe(1);
+      expect(elements.length).toBe(2);
     });
   });
 });

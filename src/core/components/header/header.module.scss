@@ -1,16 +1,38 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   margin-top: 1rem;
   height: 5rem;
   &__logo {
     width: 2.4rem;
-    height: 2.2rem;
+    height: 2.4rem;
     margin-left: 1rem;
   }
   &__burger {
     width: 2.4rem;
     height: 2rem;
     margin-right: 1rem;
+  }
+}
+.logodesktop {
+  display: none;
+}
+.logos {
+  align-self: initial;
+}
+@media screen and (min-width: 750px) {
+  .header {
+    &__logo {
+      width: 2.6rem;
+      height: 3.2rem;
+      padding-top: 1rem;
+    }
+  }
+
+  .logodesktop {
+    display: inline-flex;
+    margin-left: 1.5rem;
+    width: 8rem;
   }
 }

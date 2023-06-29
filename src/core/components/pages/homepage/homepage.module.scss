@@ -1,5 +1,4 @@
 .homepage {
-  height: 70vh;
   &__first {
     display: flex;
     flex-direction: column;
@@ -44,17 +43,21 @@
     background-color: rgb(255, 140, 230);
     border: none;
     border-radius: 0.7rem;
-    width: 10rem;
+    width: 10.5rem;
     height: 2.8rem;
     cursor: pointer;
-    padding: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  &__button:hover {
+    font-weight: bolder;
   }
   .buttoncontainer {
     display: block;
     text-align: center;
   }
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 750px) {
     &__title {
       font-size: 4rem;
       line-height: 6rem;
