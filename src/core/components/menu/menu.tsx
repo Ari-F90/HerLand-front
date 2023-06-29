@@ -19,21 +19,17 @@ type MenuProps = {
 export const Menu = ({ props }: MenuProps) => {
   return (
     <>
-      <div className={styles.menucontainer}>
-        <img
-          className={styles.logodesktop}
-          src="../../../img/logo.svg"
-          alt="Logo desktop"
-        ></img>
-
-        <div className={styles.menuburger}>
+      <nav className={styles.navbar}>
+        <div className={styles.burgerDiv}>
           <img
             className={styles.burgerImg}
             src="../../../img/menu-burger.png"
             alt="Burger menu"
           ></img>
+        </div>
 
-          <ul className={styles.menupaths}>
+        <div className={styles.navlinks}>
+          <ul>
             {props.map((item) => (
               <li key={item.label}>
                 <Link to={item.path} className={styles.menu_item}>
@@ -43,7 +39,7 @@ export const Menu = ({ props }: MenuProps) => {
             ))}
           </ul>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
