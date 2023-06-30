@@ -19,7 +19,6 @@ export function Card({ figure }: CardProps) {
             ></img>
           </Link>
         </div>
-
         <div className={styles.card__properties}>{figure.name}</div>
       </div>
     </li>
