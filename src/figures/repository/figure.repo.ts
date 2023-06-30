@@ -4,7 +4,7 @@ export class FigureApiRepo {
   url: string;
   actualPage: number;
   constructor() {
-    this.url = "https://herland.onrender.com";
+    this.url = "https://herland.onrender.com/figures";
     this.actualPage = 1;
   }
   async loadFigures(
