@@ -5,8 +5,9 @@
     align-items: center;
   }
   &__img {
-    margin-top: 2rem;
-    width: 20rem;
+    margin-top: 3rem;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
   }
   &__title {
@@ -23,7 +24,7 @@
   &__text {
     color: rgb(80, 11, 168);
     font-family: "Inter", serif;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 3rem;
     margin-right: 3rem;
     line-height: 2rem;
@@ -57,9 +58,9 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 1100px) {
     &__title {
-      font-size: 4rem;
+      font-size: 3.5rem;
       line-height: 6rem;
     }
     &__text {
@@ -83,8 +84,8 @@
       align-content: center;
     }
     &__img {
-      width: 80%;
-      height: 80%;
+      width: 95%;
+      height: 95%;
       object-fit: cover;
     }
     &__first {
