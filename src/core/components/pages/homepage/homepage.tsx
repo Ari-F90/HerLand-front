@@ -16,7 +16,7 @@ export default function HomePage() {
           <div className={styles.desktop2}>
             <div className={styles.homepage__second}>
               <div className={styles.homepage__title}>
-                Her story is our story
+                Her Story Is Our Story
               </div>
               <p className={styles.homepage__text}>
                 Hidden women of the past they forgot to teach you about

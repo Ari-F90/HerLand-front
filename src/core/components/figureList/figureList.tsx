@@ -55,8 +55,7 @@ export function FigureList() {
               >
                 Cinema
               </button>
-            </div>
-            <div className={styles.filter1}>
+
               <button
                 className={styles.filterbuttons}
                 onClick={() => setPage(+0, "Poetry")}
@@ -81,8 +80,7 @@ export function FigureList() {
               >
                 Politics/Activism
               </button>
-            </div>
-            <div className={styles.filter1}>
+
               <button
                 className={styles.filterbuttons}
                 onClick={() => setPage(+0, "Painting")}
