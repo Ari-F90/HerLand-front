@@ -7,7 +7,11 @@
   &__logo {
     width: 2.4rem;
     height: 2.4rem;
-    margin-left: 1rem;
+    top: 1rem;
+    left: 1rem;
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
   }
   &__burger {
     width: 2.4rem;
@@ -27,6 +31,8 @@
       width: 2.6rem;
       height: 3.2rem;
       padding-top: 1rem;
+      position: static;
+      margin-left: 1rem;
     }
   }
 

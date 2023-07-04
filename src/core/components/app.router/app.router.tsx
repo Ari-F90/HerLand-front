@@ -1,12 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import { menuOptions } from "../menu/menu";
+import { MenuOptions, menuOptions } from "../menu/menu";
 
 const HomePage = lazy(() => import("../pages/homepage/homepage"));
 const AboutPage = lazy(() => import("../pages/aboutpage/aboutpage"));
 const FigureListPage = lazy(
   () => import("../pages/figureListpage/figureListpage")
 );
+const Details = lazy(() => import("../details/details"));
+
+export const routesOptions: MenuOptions[] = [
+  { label: "Details", path: "/details/:id" },
+];
 
 export function AppRouter() {
   return (
@@ -24,6 +29,10 @@ export function AppRouter() {
         <Route
           path={menuOptions[2].path}
           element={<FigureListPage></FigureListPage>}
+        ></Route>
+        <Route
+          path={routesOptions[0].path}
+          element={<Details></Details>}
         ></Route>
       </Routes>
     </Suspense>
