@@ -54,6 +54,7 @@ describe("Given Details page component", () => {
   describe("When we call the 'GO BACK' button", () => {
     test("Then it will be back to the Figures List Page", async () => {
       const element2 = screen.getByRole("button");
+      expect(element2).toBeInTheDocument();
     });
   });
 });
