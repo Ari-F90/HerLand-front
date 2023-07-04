@@ -118,7 +118,7 @@
   .button_top:hover {
     font-weight: bolder;
   }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 950px) {
     &__title {
       font-size: 2rem;
     }
@@ -130,8 +130,8 @@
       align-items: center;
       gap: 1rem;
       padding: 0rem 5rem;
-      margin-right: 2%;
-      margin-left: 2.9%;
+      margin-right: 1%;
+      margin-left: 1%;
     }
 
     &__historycontainer {
@@ -147,15 +147,21 @@
     }
     &__quotecontainer {
       display: flex;
-
+      flex-direction: column;
       justify-content: space-around;
       background-color: rgb(80, 11, 168);
       gap: 3rem;
       width: 30%;
-      padding: 3rem 1.5rem;
+      padding: 3.5rem 2rem;
+      border-radius: 0.3rem;
     }
     .card__quote {
       font-size: 1rem;
+    }
+    .button_top {
+      width: 8rem;
+      height: 3rem;
+      font-size: 1.1rem;
     }
   }
 }
