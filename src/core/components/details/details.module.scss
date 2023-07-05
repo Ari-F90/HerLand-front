@@ -73,6 +73,9 @@
     flex-direction: column;
     justify-content: flex-start;
     background-color: rgb(255, 255, 255);
+    border: 1px dotted rgb(80, 11, 168);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
   }
   &__name {
     background-color: rgb(255, 255, 255);
@@ -87,6 +90,7 @@
     color: rgb(80, 11, 168);
     font-family: "Inter", serif;
     font-size: 0.9rem;
+    font-weight: bold;
   }
   &__desc {
     background-color: rgb(255, 255, 255);
