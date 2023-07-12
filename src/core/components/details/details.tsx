@@ -21,7 +21,7 @@ export default function Details() {
   return (
     <>
       <div className={styles.details}>
-        <h2 className={styles.details__title}>A close look</h2>
+        <h2 className={styles.details__title}>A closer look</h2>
         <div className={styles.details__container}>
           <div className={styles.details__quotecontainer}>
             <span className={styles.card__quote}>{figureDetails?.quote}</span>
