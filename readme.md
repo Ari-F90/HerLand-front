@@ -6,13 +6,13 @@ Happy exploring and learning about them!<br><br>
 
 **_Desktop display_**:
 
-<img width="893" alt="Captura de pantalla 2023-07-08 a las 12 28 57" src="https://github.com/Ari-F90/HerLand-front/assets/115626747/ae50681e-ef65-4b13-a7c2-10f5d79355e4">
+<img width="881" alt="Captura de pantalla 2023-07-12 a las 9 21 29" src="https://github.com/Ari-F90/HerLand-front/assets/115626747/8efe29ca-667c-472b-be9e-ea7c10ef4869">
 
 <br>
 
 **_Mobile display_**:
 
-<img width="684" alt="Captura de pantalla 2023-07-08 a las 12 07 27" src="https://github.com/Ari-F90/HerLand-front/assets/115626747/11c5ebdd-0392-48d4-a06b-07d06a93e4e4">
+<img width="686" alt="Captura de pantalla 2023-07-12 a las 9 21 06" src="https://github.com/Ari-F90/HerLand-front/assets/115626747/e77f9df1-ea2b-4851-bc63-faf4515ea2a6">
 
 <br>
 
