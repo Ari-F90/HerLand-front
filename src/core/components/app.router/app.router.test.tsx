@@ -47,10 +47,10 @@ describe("Given AppRouter", () => {
     });
   });
   describe("When rendering and the path is '/details/:id'", () => {
-    test("Then, the title 'A close look' should be in the screen", async () => {
+    test("Then, the title 'A closer look' should be in the screen", async () => {
       await waitFor(async () => renderAppRouter(3));
       const element = await screen.findByRole("heading", {
-        name: "A close look",
+        name: "A closer look",
       });
       expect(element).toBeInTheDocument();
     });
