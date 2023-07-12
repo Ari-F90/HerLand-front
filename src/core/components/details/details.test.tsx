@@ -46,7 +46,7 @@ describe("Given Details page component", () => {
   });
 
   describe("When we render the component", () => {
-    test('Then, the title "A close look" should be in the document', () => {
+    test('Then, the title "A closer look" should be in the document', () => {
       const element1 = screen.getByRole("heading");
       expect(element1).toBeInTheDocument();
     });
